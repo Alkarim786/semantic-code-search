@@ -105,7 +105,7 @@ Local: `pip install torch --index-url https://download.pytorch.org/whl/cpu && pi
 
 ## Testing
 ```bash
-pytest     # 15 tests, using a deterministic hashing embedder, so no model download is needed
+pytest     # 13 tests, using a deterministic hashing embedder, so no model download is needed
 ```
 Covers:
 - qualified names, docstrings and line numbers for Python; JS, TS and Go definitions; long-function splitting and file fallback;
