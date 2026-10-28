@@ -1,0 +1,11 @@
+# docker compose up --build  ->  http://localhost:8000
+# Index a repo:  curl -X POST localhost:8000/api/index -H 'content-type: application/json' -d '{"repo":"psf/requests"}'
+services:
+  search:
+    build: .
+    image: semantic-code-search:local
+    ports: ["8000:8000"]
+    volumes: [cs-data:/data, cs-models:/models]
+volumes:
+  cs-data:
+  cs-models:
